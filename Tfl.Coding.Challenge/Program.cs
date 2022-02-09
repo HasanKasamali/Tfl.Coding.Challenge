@@ -11,6 +11,11 @@ namespace Tfl.Coding.Challenge
     {
         static async Task Main(string[] args)
         {
+            if (args.Length > 1)
+            {
+                Console.WriteLine("Please provide a road");
+            }
+
             var services = ConfigureServices();
             var serviceProvider = services.BuildServiceProvider();
 
