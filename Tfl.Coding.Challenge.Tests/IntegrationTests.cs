@@ -14,8 +14,8 @@ namespace Tfl.Coding.Challenge.Tests
         {
             _config = new Mock<IConfiguration>();
             _config.SetupGet(x => x[It.Is<string>(s => s == "BaseUrl")]).Returns("https://api.tfl.gov.uk/");
-            _config.SetupGet(x => x[It.Is<string>(s => s == "AppId")]).Returns("testing_feb2022");
-            _config.SetupGet(x => x[It.Is<string>(s => s == "AppKey")]).Returns("cc8f576f5a3a4a1795a278eb7118003c");
+            _config.SetupGet(x => x[It.Is<string>(s => s == "AppId")]).Returns("put your app id from you TFL portal");
+            _config.SetupGet(x => x[It.Is<string>(s => s == "AppKey")]).Returns("put your api key from your TFL portal");
 
             _sut = new TflApi(_config.Object);
         }
