@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 
 namespace Tfl.Coding.Challenge.Infrastructure
 {
@@ -8,8 +9,10 @@ namespace Tfl.Coding.Challenge.Infrastructure
 
         public string DisplayName { get; set; }
 
+        [JsonProperty("statusSeverity")]
         public string RoadStatus { get; set; }
 
+        [JsonProperty("statusSeverityDescription")]
         public string RoadStatusDescription { get; set; }
 
         public string Bounds { get; set; }

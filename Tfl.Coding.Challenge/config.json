@@ -1,0 +1,5 @@
+﻿{
+  "BaseUrl": "https://api.tfl.gov.uk/",
+  "AppId": "testing_feb2022",
+  "AppKey": "cc8f576f5a3a4a1795a278eb7118003c"
+}

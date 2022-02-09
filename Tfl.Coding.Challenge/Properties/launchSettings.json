@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Tfl.Coding.Challenge": {
+      "commandName": "Project",
+      "commandLineArgs": "A10"
+    }
+  }
+}
